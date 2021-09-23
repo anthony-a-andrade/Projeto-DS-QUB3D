@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> QUB³D </title>
+        <meta charset="utf-8"/>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+    </head>
+    <body>
+        <div id="menu" class="align h_center v_center">
+            <span class="title">Q</span><span class="title">U</span><span class="title">B</span><span class="title">³</span><span class="title">D</span>
+            <br><br><br>
+            <button onclick="startGame()">INICIAR</button>
+        </div>
+
+        <div id="game" class="align h_center v_center">
+            <span class="title">Q</span><span class="title">U</span><span class="title">B</span><span class="title">³</span><span class="title">D</span>
+            <br><br>
+            <canvas id="canvasGame" width="318" height="424"></canvas>
+        </div>
+        
+        <div id="pontuacao" class="align h_right v_center">
+            PONTUAÇÃO: <span id="points">0</span>
+            <br><br>
+            MAIOR COMBINAÇÃO: <span id="biggestComb">0</span>
+        </div>
+
+        <div id="end" class="align h_center v_center">
+            <h2> JOGO ENCERRADO! </h2>
+            <br>
+            PONTUAÇÃO FINAL: <span id="endPoints">0</span> <br>
+            MAIOR COMBINAÇÃO: <span id="endCombo">0</span> <br>
+            <br><br>
+            TEMPO DE JOGO: <br> <span id="endTime">00:00:00</span>
+            <br><br>
+            <button onclick="restartGame()">TENTAR NOVAMENTE?</button>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

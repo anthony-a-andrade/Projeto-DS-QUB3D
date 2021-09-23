@@ -1,0 +1,57 @@
+/* Base HTML */
+* { 
+    font-family: 'Agency FB'; 
+    color: white;
+}
+
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.align {
+    position: absolute;
+    width: min-content;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.h_center { left: 50%; }
+.v_center { top: 50%; }
+.h_right { left: 75%; }
+
+span { font-weight: bold; }
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 24px;
+}
+
+/* DIV Menu */
+#menu span { font-size: 70px; }
+#menu span:nth-child(1) { color: orange; }
+#menu span:nth-child(2) { color: yellow; }
+#menu span:nth-child(3) { color: green; }
+#menu span:nth-child(4) { color: red; }
+#menu span:nth-child(5) { color: magenta; }
+
+/* DIV Game */
+#game { display: none; }
+#game span { font-size: 50px; }
+
+/* DIV Pontuação */
+#pontuacao { display: none; font-size: 25px; }
+
+/* DIV End */
+#end { display: none; font-size: 25px; width: max-content; }
+#end h2 { margin: 0; }
